@@ -1,0 +1,77 @@
+// utils/popular_cities_util.dart
+
+class PopularCitiesUtil {
+  static final Map<String, List<Map<String, String>>> topCitiesByCountry = {
+    'IN': [
+      {'name': 'Delhi', 'stateCode': 'DL'},
+      {'name': 'Mumbai', 'stateCode': 'MH'},
+      {'name': 'Bangalore', 'stateCode': 'KA'},
+      {'name': 'Chennai', 'stateCode': 'TN'},
+      {'name': 'Kolkata', 'stateCode': 'WB'},
+      {'name': 'Hyderabad', 'stateCode': 'TG'},
+      {'name': 'Pune', 'stateCode': 'MH'},
+      {'name': 'Ahmedabad', 'stateCode': 'GJ'},
+      {'name': 'Jaipur', 'stateCode': 'RJ'},
+      {'name': 'Lucknow', 'stateCode': 'UP'},
+      {'name': 'Bhopal', 'stateCode': 'MP'},
+      {'name': 'Chandigarh', 'stateCode': 'CH'},
+      {'name': 'Surat', 'stateCode': 'GJ'},
+      {'name': 'Indore', 'stateCode': 'MP'},
+      {'name': 'Nagpur', 'stateCode': 'MH'},
+      {'name': 'Thiruvananthapuram', 'stateCode': 'KL'},
+      {'name': 'Patna', 'stateCode': 'BR'},
+      {'name': 'Bhubaneswar', 'stateCode': 'OD'},
+      {'name': 'Guwahati', 'stateCode': 'AS'},
+      {'name': 'Vijayawada', 'stateCode': 'AP'},
+    ],
+    'US': [
+      {'name': 'New York', 'stateCode': 'NY'},
+      {'name': 'Los Angeles', 'stateCode': 'CA'},
+      {'name': 'Chicago', 'stateCode': 'IL'},
+      {'name': 'Houston', 'stateCode': 'TX'},
+      {'name': 'Phoenix', 'stateCode': 'AZ'},
+      {'name': 'Philadelphia', 'stateCode': 'PA'},
+      {'name': 'San Antonio', 'stateCode': 'TX'},
+      {'name': 'San Diego', 'stateCode': 'CA'},
+      {'name': 'Dallas', 'stateCode': 'TX'},
+      {'name': 'San Jose', 'stateCode': 'CA'},
+      {'name': 'Austin', 'stateCode': 'TX'},
+      {'name': 'Jacksonville', 'stateCode': 'FL'},
+      {'name': 'Fort Worth', 'stateCode': 'TX'},
+      {'name': 'Columbus', 'stateCode': 'OH'},
+      {'name': 'Charlotte', 'stateCode': 'NC'},
+      {'name': 'Indianapolis', 'stateCode': 'IN'},
+      {'name': 'San Francisco', 'stateCode': 'CA'},
+      {'name': 'Seattle', 'stateCode': 'WA'},
+      {'name': 'Denver', 'stateCode': 'CO'},
+      {'name': 'Washington', 'stateCode': 'DC'},
+    ],
+    'GB': [
+      {'name': 'London', 'stateCode': 'ENG'},
+      {'name': 'Manchester', 'stateCode': 'ENG'},
+      {'name': 'Birmingham', 'stateCode': 'ENG'},
+      {'name': 'Glasgow', 'stateCode': 'SCT'},
+      {'name': 'Liverpool', 'stateCode': 'ENG'},
+      {'name': 'Bristol', 'stateCode': 'ENG'},
+      {'name': 'Leeds', 'stateCode': 'ENG'},
+      {'name': 'Sheffield', 'stateCode': 'ENG'},
+      {'name': 'Edinburgh', 'stateCode': 'SCT'},
+      {'name': 'Nottingham', 'stateCode': 'ENG'},
+      {'name': 'Leicester', 'stateCode': 'ENG'},
+      {'name': 'Coventry', 'stateCode': 'ENG'},
+      {'name': 'Kingston upon Hull', 'stateCode': 'ENG'},
+      {'name': 'Cardiff', 'stateCode': 'WLS'},
+      {'name': 'Stoke-on-Trent', 'stateCode': 'ENG'},
+      {'name': 'Southampton', 'stateCode': 'ENG'},
+      {'name': 'Reading', 'stateCode': 'ENG'},
+      {'name': 'Newcastle', 'stateCode': 'ENG'},
+      {'name': 'Portsmouth', 'stateCode': 'ENG'},
+      {'name': 'Brighton', 'stateCode': 'ENG'},
+    ],
+    // Add more countries here...
+  };
+
+  static List<Map<String, String>> getCitiesByCountry(String countryCode) {
+    return topCitiesByCountry[countryCode.toUpperCase()] ?? [];
+  }
+}
