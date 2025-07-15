@@ -73,7 +73,7 @@ class WeatherService {
 
   Future<List<dynamic>> searchCities(String query) async {
     final url = Uri.parse(
-      'http://api.openweathermap.org/geo/1.0/direct?q=$query&limit=50&appid=$weatherApiKey',
+      'https://api.openweathermap.org/geo/1.0/direct?q=$query&limit=50&appid=$weatherApiKey',
     );
 
     final res = await http.get(url);

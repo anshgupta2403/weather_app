@@ -38,7 +38,6 @@ class _SearchCityScreenState extends State<SearchCityScreen> {
         listen: false,
       );
       final results = await weatherApiProvider.searchCities(query);
-      print(results);
       setState(() => _searchResults = results);
     } catch (e) {
       print('City search failed: $e');
