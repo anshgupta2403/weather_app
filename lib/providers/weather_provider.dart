@@ -23,7 +23,7 @@ class WeatherProvider with ChangeNotifier {
   AppWeather? getWeather(String city) => _weatherData[city];
   bool isFetching(String city) => _isFetching[city] == true;
 
-  _init() {
+  void _init() {
     _cities = _storage.getCities();
   }
 
